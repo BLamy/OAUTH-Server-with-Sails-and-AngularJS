@@ -13,10 +13,10 @@ These instructions are for creating an OAuth server the “Sails way” using Sa
 
 ### Instructions
 
-1. Install SailsJS beta (rc9+) if not installed already.
+1. Install SailsJS beta if not installed already.
 
     ```shell
-    sudo npm install sails@beta -g
+    sudo npm install sails -g
     ```
 
 2. Generate a new SailsJS app by running the following in terminal:
@@ -28,7 +28,7 @@ These instructions are for creating an OAuth server the “Sails way” using Sa
 3. Install Dependencies
 
     ```shell
-    npm install nodemailer oauth2orize passport passport-http-bearer passport-oauth2-public-client rand-token sails-mongo@beta bluebird bcrypt-nodejs --save
+    npm install nodemailer oauth2orize passport passport-http-bearer passport-oauth2-public-client rand-token sails-mongo bluebird bcrypt-nodejs --save
     ```
 
     TIP: Sometimes it helps to run `sudo npm cache clear` when dependencies fail to install.
@@ -408,7 +408,7 @@ These instructions are for creating an OAuth server the “Sails way” using Sa
                     },
 
                     expiration_date: {
-                        type: 'date'
+                        type: 'datetime'
                     },
 
                     client_id: {
